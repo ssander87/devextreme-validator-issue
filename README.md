@@ -2,6 +2,10 @@
 
 Minimal public reproduction for a DevExtreme Angular issue in `devextreme-angular@25.1.6`.
 
+## Live demo
+
+https://devextremevalidatorissue.netlify.app
+
 ## Versions
 
 - Angular: `19.2.20`
@@ -47,5 +51,3 @@ The repository includes `netlify.toml` with the Angular build command and publis
 ## Technical finding
 
 `DxValidatorComponent` creates its widget on the parent editor element. During disposal, the inherited widget destruction path removes `this.instance.element()` from the DOM. For a nested validator, that element is the editor host (`<dx-select-box>`), so destroying only the validator also removes the editor's host node.
-
-See `HANDOUT.md` for the full investigation and verification details.
