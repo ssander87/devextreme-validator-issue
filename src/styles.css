@@ -1,0 +1,45 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 16px;
+}
+.panel {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.hint {
+  color: #777;
+  font-size: 0.9em;
+}
+.ok {
+  color: #1a7f37;
+}
+.bad {
+  color: #cf222e;
+}
+.field {
+  display: inline-block;
+  width: 320px;
+  margin: 8px;
+}
+.repro-form {
+  min-height: 300px;
+}
+.popup-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+.state-label {
+  font-weight: 600;
+}
+.mode-label {
+  font-weight: 600;
+}
+.popup-toolbar .hint {
+  width: 100%;
+}
